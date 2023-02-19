@@ -1,0 +1,29 @@
+.new-thread-dl {
+  margin: 40px auto;
+  width: 88%;
+}
+.new-thread-list {
+  max-width: 100%;
+  margin: 16px;
+  padding: 16px;
+  background: white;
+  filter: drop-shadow(0 1px 1px lightsteelblue);
+}
+dt,dd {
+  margin: 0;
+}
+dt {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 16px 0;
+  text-align: left;
+}
+dd {
+  border-bottom: 1px dashed #000;
+  margin-bottom: 24px;
+  padding: 3px 0;
+  color: gray;
+  font-size: 0.7rem;
+  text-align: right;
+  vertical-align: bottom;
+}
