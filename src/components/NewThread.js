@@ -4,6 +4,7 @@ import axios from 'axios';
 import '../css/NewThread.css'
 import '../App.css';
 import Header from './Header'
+import Footer from './Footer';
 
 function NewThread() {
 

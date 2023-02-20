@@ -1,0 +1,9 @@
+footer {
+  background: skyblue;
+  text-align: center;
+  color: white;
+}
+footer p {
+  line-height: 60px;
+  font-weight: bold;
+}

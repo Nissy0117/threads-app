@@ -6,6 +6,7 @@ import Header from './components/Header';
 import NewThreadBtn from './components/NewThreadBtn';
 import Threads from './components/Threads';
 import NewThread from './components/NewThread';
+import Post from './components/Post';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/newthread" element={<NewThread />} />
+        <Route path="/post" element={<Post />} />
         {/* <Route path="/newthread" element={<NewThread />} /> */}
       </Routes>
     </div>
