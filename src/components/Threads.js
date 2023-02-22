@@ -25,23 +25,21 @@ function Threads() {
   const useThreads = threads.map((thread, title) => {
     return (
       <div key={thread.id}>
-        <Link to={{ pathname: "/posts", state: {thread} }} >
-          <dl className='new-thread-dl'>
+        <dl className='new-thread-dl'>
+          <Link to="/posts" >
             <dt>{thread.title}</dt>
+          </Link>
             <dd>ID：{thread.id}</dd>
-          </dl>
-        </Link>
+        </dl>
       </div>
     )
   })
-
 
   return (
     <div>
       <p className='head'>新着スレッド一覧</p>
       <NewThreadBtn />
       {useThreads}
-      
     </div>
   )
 }
