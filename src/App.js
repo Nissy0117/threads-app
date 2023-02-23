@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Header from './components/Header';
 import NewThreadBtn from './components/NewThreadBtn';
 import Threads from './components/Threads';
+import Thread from './components/Thread';
 import NewThread from './components/NewThread';
 
 function App() {

@@ -3,6 +3,7 @@ import '../css/Threads.css';
 import { useState, useEffect } from 'react'
 import { Link, Outlet } from 'react-router-dom';
 import NewThreadBtn from './NewThreadBtn';
+import Thread from './Thread';
 
 function Threads() {
   const [threads, setThreads] = useState([]);
