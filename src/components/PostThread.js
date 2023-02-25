@@ -26,9 +26,8 @@ function PostThread(props) {
       .catch((error) => {
         alert('error')
       })
-    window.location.reload()
+      window.location.reload()
   }
-  console.log(sendPost)
 
   return (
     <div className='postthread'>
@@ -39,7 +38,6 @@ function PostThread(props) {
             ref={inputRef}
             type="text"
             placeholder='テキストを入力'
-            required="required"
           />
         </form>
         <button className='post-btn' onClick={postBtn}>投稿する</button>

@@ -8,7 +8,7 @@ import PostThread from './PostThread';
 
 function Thread() {
   const { threadid } = useParams();
-  const [postsList, setPostsList] = useState([]);
+  const [postsList, setPostsList] = useState("");
 
   useEffect(() => {
     fetch(`https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com/threads/${threadid}/posts`, {
@@ -18,6 +18,7 @@ function Thread() {
         setPostsList(data)
       })
   }, [])
+  console.log(postsList)
 
   const postArray = postsList.posts
 
