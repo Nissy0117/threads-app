@@ -26,7 +26,7 @@ function NewThread() {
       })
       .then((response) => {
         setPost(response.data)
-        navigate('/home')
+        navigate('/')
       })
       .catch(error => {
         console.log(error)
@@ -50,7 +50,7 @@ function NewThread() {
           />
         </form>
         <button className='create-btn' onClick={createPost}>作成</button>
-        <Link to="/home">
+        <Link to="/">
           <p className='back-to-home'>Homeへ戻る</p>
         </Link>
       </div>

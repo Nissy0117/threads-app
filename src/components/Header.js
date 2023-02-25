@@ -6,7 +6,7 @@ function Header() {
   return (
     <div>
       <header>
-        <Link to="/home">
+        <Link to="/">
           <h1>掲示板App</h1>
         </Link>
       </header>

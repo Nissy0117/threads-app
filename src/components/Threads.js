@@ -1,12 +1,18 @@
 import React from 'react'
 import '../css/Threads.css';
 import { useState, useEffect } from 'react'
-import { Link, Outlet } from 'react-router-dom';
+import {
+  Routes,
+  Route,
+  Link,
+  useNavigate
+} from 'react-router-dom';
 import NewThreadBtn from './NewThreadBtn';
 import Thread from './Thread';
 
 function Threads() {
   const [threads, setThreads] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com/threads', {
@@ -17,13 +23,17 @@ function Threads() {
       })
   }, [])
 
+  console.log(threads)
+
   const useThreads = threads.map((thread, title) => {
+
     return (
       <div key={thread.id}>
         <dl className='new-thread-dl'>
-          <dt>{thread.title}</dt>
+          <Link to={`/threads/${thread.id}/posts`}>
+            <dt>{thread.title}</dt>
+          </Link>
           <dd>ID：{thread.id}</dd>
-          <Outlet />
         </dl>
       </div>
     )
@@ -33,8 +43,9 @@ function Threads() {
     <div>
       <p className='head'>新着スレッド一覧</p>
       <NewThreadBtn />
-        {useThreads}
+      {useThreads}
     </div>
+
   )
 }
 
