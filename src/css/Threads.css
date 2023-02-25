@@ -1,5 +1,5 @@
 .new-thread-dl {
-  margin: 40px auto;
+  margin: 50px auto;
   width: 88%;
 }
 .new-thread-list {
@@ -15,7 +15,7 @@ dt,dd {
 dt {
   font-size: 1.3rem;
   font-weight: bold;
-  padding: 16px 0;
+  padding: 10px 0;
   text-align: left;
 }
 dd {
@@ -26,4 +26,7 @@ dd {
   font-size: 0.7rem;
   text-align: right;
   vertical-align: bottom;
+}
+.threads-area {
+  margin-bottom: 140px;
 }

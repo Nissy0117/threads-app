@@ -1,5 +1,3 @@
-import React from 'react'
-import '../css/Threads.css';
 import { useState, useEffect } from 'react'
 import {
   Routes,
@@ -7,6 +5,7 @@ import {
   Link,
   useNavigate
 } from 'react-router-dom';
+import '../css/Threads.css';
 import NewThreadBtn from './NewThreadBtn';
 import Thread from './Thread';
 
@@ -23,10 +22,7 @@ function Threads() {
       })
   }, [])
 
-  console.log(threads)
-
   const useThreads = threads.map((thread, title) => {
-
     return (
       <div key={thread.id}>
         <dl className='new-thread-dl'>
@@ -43,10 +39,11 @@ function Threads() {
     <div>
       <p className='head'>新着スレッド一覧</p>
       <NewThreadBtn />
-      {useThreads}
+      <div className='threads-area'>
+        {useThreads}
+      </div>
     </div>
-
   )
 }
 
-export default Threads
+export default Threads;

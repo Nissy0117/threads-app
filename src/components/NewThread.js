@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios';
-import '../css/NewThread.css'
 import '../App.css';
+import '../css/NewThread.css'
 import Header from './Header'
 import Footer from './Footer';
 
@@ -20,13 +20,12 @@ function NewThread() {
   }, []);
 
   function createPost() {
-    axios
-      .post(`${baseURL}/threads`, {
-        title: inputRef.current.value
-      })
+    axios.post(`${baseURL}/threads`, {
+      title: inputRef.current.value
+    })
       .then((response) => {
         setPost(response.data)
-        navigate('/')
+        navigate("/");
       })
       .catch(error => {
         console.log(error)
@@ -53,9 +52,10 @@ function NewThread() {
         <Link to="/">
           <p className='back-to-home'>Homeへ戻る</p>
         </Link>
+        <Footer />
       </div>
     </div>
   )
 }
 
-export default NewThread
+export default NewThread;

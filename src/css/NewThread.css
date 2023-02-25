@@ -1,4 +1,6 @@
-
+body {
+  position: relative;
+}
 .head {
   font-size: 1.2rem;
   font-weight: bold;
