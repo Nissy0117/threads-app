@@ -28,11 +28,10 @@ body {
   border-radius: 5px;
   border: none;
   background: royalblue;
-  border: none;
-  border-radius: 3px 3px 3px 3px;
   color: white;
   transition: .2s;
   cursor: pointer;
+  padding: 10px 12px;
 }
 .post-btn:hover {
   background: lightskyblue;

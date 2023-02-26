@@ -25,9 +25,10 @@ function Thread() {
   const posts = postArray?.map((post) => {
     return (
       <div key={post.id}>
-        <ul className='postlist-ul'>
-          <li className='postlist-li' key={post.id}>{post.post}</li>
-        </ul>
+        <dl className='postlist-dl'>
+          <dt className='postlist-li'>{post.post}</dt>
+          <dd className='postlist-li'>ID：{post.id}</dd>
+        </dl>
       </div>
     )
   })
