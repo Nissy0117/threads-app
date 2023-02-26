@@ -38,7 +38,7 @@ function PostThread(props) {
             type="text"
             placeholder='テキストを入力'
           />
-        <button className='post-btn' onClick={postBtn}>投稿する</button>
+          <button className='post-btn' onClick={postBtn}>投稿する</button>
         </form>
       </div>
     </div>
