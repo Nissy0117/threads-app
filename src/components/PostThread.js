@@ -8,7 +8,6 @@ import axios from 'axios';
 function PostThread(props) {
   const baseURL = "https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com"
   const inputRef = useRef();
-  const navigate = useNavigate();
   const [sendPost, setSendPost] = useState([]);
 
   useEffect(() => {
